@@ -10,20 +10,20 @@ ASSIGNMENT RULES
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
 const area = function (l1, l2) {
-  return l1 * l2;
+	return l1 * l2;
 };
 x = 10;
 y = 5;
 
-console.log("area of the rectangle is :", area(x, y));
+console.log('area of the rectangle is :', area(x, y));
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
 
 const crazySum = (a, b) => {
-  if (a === b) return 3 * (a + b);
-  else return "not equal";
+	if (a === b) return 3 * (a + b);
+	else return 'not equal';
 };
 
 x = crazySum(3, 3);
@@ -37,11 +37,22 @@ the specified
 number is greater than 19.
 */
 
+const crazyDiff = (c) => {
+	if (c > 19) return 3 * Math.abs(c - 19);
+	else return Math.abs(c - 19);
+};
+console.log(crazyDiff(20));
+
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
 */
 
 /* WRITE YOUR CODE HERE */
+const boundary = (N) => {
+	if (N == 400 || N >= 20 || N <= 100) return true;
+	else return false;
+};
+console.log(boundary(700));
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
