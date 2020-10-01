@@ -49,7 +49,7 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 
 /* WRITE YOUR CODE HERE */
 const boundary = (N) => {
-	if (N == 400 || N >= 20 || N <= 100) return true;
+	if (N == 400 || (N >= 20 && N <= 100)) return true;
 	else return false;
 };
 console.log(boundary(700));
