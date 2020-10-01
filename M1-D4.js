@@ -74,18 +74,43 @@ HINT: Module Operator
 */
 
 /* WRITE YOUR CODE HERE */
+const check3and7 = (d) => {
+	if (Math.sign(d) == 1) {
+		if (d % 3 == 0 || d % 7 == 0) return true;
+		else return false;
+	} else return false;
+};
+console.log(check3and7(14));
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
 
 /* WRITE YOUR CODE HERE */
+const reverseString = (s1) => {
+	let s2 = s1.split('');
+	let s3 = s2.reverse();
+	let s4 = s3.join('');
+	return s4;
+};
+console.log(reverseString('strive'));
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
 /* WRITE YOUR CODE HERE */
+const upperFirst = function (str) {
+	var splitStr = str.toLowerCase().split(' ');
+
+	for (var i = 0; i < splitStr.length; i++) {
+		splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+	}
+
+	return splitStr.join(' ');
+};
+
+console.log(upperFirst('what is up strivers'));
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
