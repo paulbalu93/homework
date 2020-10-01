@@ -115,6 +115,11 @@ console.log(upperFirst('what is up strivers'));
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+const cutString = function (stringed) {
+	let h = stringed.length;
+	return stringed.slice(1, h - 1);
+};
+console.log(cutString('Strive'));
 
 /* WRITE YOUR CODE HERE */
 
@@ -123,6 +128,14 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 
 /* WRITE YOUR CODE HERE */
+function giveMeRandom(n) {
+	let arr = [];
+	for (let i = 0; i < n; i++) {
+		arr[i] = Math.floor(Math.random() * 10);
+	}
+	console.log(arr);
+}
+giveMeRandom(5);
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
