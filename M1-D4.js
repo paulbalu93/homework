@@ -59,6 +59,14 @@ Write a function "strivify" which accepts a string S. Add to S "Strive" in front
 */
 
 /* WRITE YOUR CODE HERE */
+const strivify = (s) => {
+	if (s.startsWith('Strive')) return s;
+	else {
+		s = 'Strive' + s;
+		return s;
+	}
+};
+console.log(strivify('School'));
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
