@@ -151,10 +151,23 @@ console.log(WhatDayIsIt());
 /* Ex.9
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
+function HowManyDays(dt) {
+	var current = new Date(dt.getTime());
+	var previous = new Date(dt.getFullYear(), 0, 1);
+
+	return Math.ceil((current - previous + 1) / 86400000);
+}
+console.log(HowManyDays(new Date(2015, 0, 15)));
+console.log(HowManyDays(new Date(2015, 11, 14)));
 
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
 */
+function IsTodayMyBDay(x) {
+	if (x == '17.08.1993') return true;
+	else return false;
+}
+console.log(IsTodayMyBDay('17.08.1994'));
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of the file
