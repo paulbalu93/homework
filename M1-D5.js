@@ -78,15 +78,37 @@ console.log(WhoIsBigger(5, 8));
     Write the function SplitMe that receives a String and returns an array with every word in that string
     Ex. SplitMe("I love coding") => returns [ "I","Love","Coding"]
 */
+/*function splitMe(z) {
+	for(i=0;i>
+	
+}*/
 
 /* Ex.4
     Write the function DeleteOne that receives a string and a boolean. If the boolean is true, should return the string without the first letter, otherwise should remove the last one
 */
 
+function DeleteOne(x, y) {
+	h = x.length;
+	if (y == true) {
+		x = x.slice(1, h);
+		console.log(x);
+	} else {
+		x = x.slice(0, h - 1);
+		console.log(x);
+	}
+}
+DeleteOne('john', false);
+
 /* Ex.5
    Write the function OnlyLetters that receives a string, removes all the numbers and returns it.
    Ex.: OnlyLetters("I love 123 whatever")  => returns "I love whatever"
 */
+
+function Onyletters(x) {
+	x = x.replace(/[0-9]/g, '');
+	return x;
+}
+console.log(Onyletters('I love 123 whatever'));
 
 /* Ex.6 
    Write the function IsThisAnEmail that receives a string and returns true if the string is a valid email.
