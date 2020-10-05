@@ -157,8 +157,8 @@ function HowManyDays(dt) {
 
 	return Math.ceil((current - previous + 1) / 86400000);
 }
-console.log(HowManyDays(new Date(2015, 0, 15)));
-console.log(HowManyDays(new Date(2015, 11, 14)));
+console.log(HowManyDays(new Date(2020, 0, 15)));
+console.log(HowManyDays(new Date(2020, 11, 14)));
 
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
